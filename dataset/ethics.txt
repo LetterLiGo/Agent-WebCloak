@@ -1,0 +1,3 @@
+Our research protocol, including LLMCrawlBench data collection and the user studies, received full approval from our Institutional Review Board (IRB). In line with best practices for web agent datasets like WebArena, Mind2Web, LLMCrawlBench consists of offline snapshots of public webpages, and no private or authenticated user data was accessed or stored.
+
+Ground-truth annotation is done by trained annotators under clear guidelines to ensure objectivity and relevance. Access to our datasets is strictly regulated and granted only for legitimate research purposes, subject to rigorous scrutiny and institutional approval to maintain ethical standards. We have also contacted the websites to inform them of our research.

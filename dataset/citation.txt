@@ -1,0 +1,6 @@
+@inproceedings{li2026webcloak,
+  title={WebCloak: Characterizing and Mitigating Threats from {LLM}-Driven Web Agents as Intelligent Scrapers},
+  author={Li, Xinfeng and Qiu, Tianze and Jin, Yingbin and Wang, Lixu and Guo, Hanqing and Jia, Xiaojun and Wang, XiaoFeng and Dong, Wei},
+  booktitle={2026 IEEE Symposium on Security and Privacy (S&P)},
+  year={2026}
+}

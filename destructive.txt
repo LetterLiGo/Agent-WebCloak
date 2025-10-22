@@ -1,0 +1,7 @@
+Only test automated web scraping against local HTML files or websites you own/have permission to scrape,
+do not use against live websites without explicit permission. Monitor resource usage as scraping can be
+resource-intensive.
+
+Monitor API usage and costs carefully, set API rate limits to prevent runaway costs.
+
+Also be aware that to extract dataset files, you'll probably need 5 GB vacancy in your disk.

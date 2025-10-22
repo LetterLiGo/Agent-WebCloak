@@ -1,0 +1,5 @@
+LLMCrawlBench uses static offline snapshots, which may not capture the most up-to-date web content changes.
+
+Offline snapshots might miss real-time updates like user-specific content or A/B testing variations.
+
+The dataset's 5 categories might not fully represent the web's diversity.

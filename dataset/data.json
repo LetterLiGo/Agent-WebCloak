@@ -1,0 +1,1440 @@
+{
+  "version": 14,
+  "data": [
+  {
+    "website": "Amazon",
+    "prefix": "amazon",
+    "category": "Marketplaces",
+    "preprocess": ["remove_js"],
+    "data": [
+      {
+        "id": "1",
+        "name": "apple",
+        "count": 24,
+        "url": "https://www.amazon.com/s?i=computers-intl-ship&bbn=16225007011&rh=n%3A16225007011%2Cp_123%3A110955&dc&ds=v1%3A7QIViqPMzeOS%2BxSqGxzanH2KQ%2BnG7R0Zti8BQwUALBI&qid=1746167238&rnid=85457740011&ref=sr_nr_p_123_2"
+      },
+      {
+        "id": "2",
+        "name": "video_game",
+        "count": 24,
+        "url": "https://www.amazon.com/s?i=videogames-intl-ship&srs=16225016011&rh=n%3A16225016011%2Cn%3A2617941011&s=popularity-rank&dc&fs=true&ds=v1%3Afr%2FLXVQD8G4aXm%2B6WRdZaUAAI0gvYBChYzOQmpo66SI&qid=1746167323&rnid=16225016011&ref=sr_nr_n_1"
+      },
+      {
+        "id": "3",
+        "name": "household",
+        "count": 24,
+        "url": "https://www.amazon.com/s?k=household+cleaning+tools&i=hpc&rh=n%3A3760901%2Cp_123%3A237711&dc&ds=v1%3AHlBzaO8xfIaSn0MCKp%2BRBs1VDSmcdVfE%2BNnNIzcT6Zc&qid=1746167441&rnid=23991400011&ref=sr_nr_p_n_feature_six_browse-bin_1"
+      },
+      {
+        "id": "4",
+        "name": "gift_card",
+        "count": 16,
+        "url": "https://www.amazon.com/s?i=gift-cards&rh=n%3A2238192011&s=popularity-rank&hidden-keywords=B083L82H6B%7CB079YMX2J6%7CB00GU300HO%7CB07Q42Q1CH%7CB09QGYJTVQ%7CB00GU301FK%7CB00GU2ZZ8Y%7CB08MW92TWD%7CB07TSFXKGM%7CB093Z1F4QM%7CB07TVKXRB1%7CB09QGWKS39%7CB01N0Q63M8%7CB09QH1DDPW%7CB09QGZWH6R%7CB09QH1C74J%7CB01GKWEPBG%7CB09QGWZRSP%7CB07Z5PH3RZ%7CB0C1S37KX5%7CB077CZY68Z%7CB094Z4FKT4%7CB08HCF75F4%7CB094Z65CZM%7CB07ZHZMLX2%7CB07S97PYTS%7CB07Y496YNK%7CB094Z6RWSK%7CB077CYT514%7CB094Z66QF4%7CB0CHMTGBDH%7CB01GKWENCM%7CB0CHMTGBDP%7CB0C6Q973CH%7CB07Z4BBXG4%7CB07Q33K6SQ%7CB0CJCJGS8V%7CB0CHMY9K8X%7CB09LMW46WT%7CB0C4KTSNSB%7CB094Z7VRJJ%7CB07S99MT92%7CB07MZRZ726%7CB0CJCLR28K%7CB0CJCLXVNG%7CB0CG113D9C%7CB0CJCMJ63P%7CB077CWPVC8%7CB07Z36WKSN%7CB0CJCMF5LN%7CB0CJCMF5LN%7CB0C6LR1NCB&_encoding=UTF8&pf_rd_p=35f03811-cde0-44f0-af8f-f809d63cafbd&pf_rd_r=5AXMPYRSJJ920YR2WJQ0&ref=cct_cg_BGCLPC_3a1"
+      },
+      {
+        "id": "5",
+        "name": "pet_supply",
+        "count": 14,
+        "url": "https://www.amazon.com/gp/goldbox?ref_=nav_cs_gb&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%255C%2522brands%255C%2522%253A%255B%255C%2522Fresh%2520Step%255C%2522%252C%255C%2522FXW%255C%2522%252C%255C%2522Feandrea%255C%2522%252C%255C%2522MYJAQI%255C%2522%252C%255C%2522RIZZARI%255C%2522%252C%255C%2522ALL%2520FOR%2520PAWS%255C%2522%252C%255C%2522PEEIPM%255C%2522%252C%255C%2522Leather%2520Honey%255C%2522%252C%255C%2522Veken%255C%2522%252C%255C%2522EHEYCIGA%255C%2522%252C%255C%2522pidan%255C%2522%252C%255C%2522Ameritex%255C%2522%252C%255C%2522PETLIBRO%255C%2522%255D%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&bubble-id=pet-supplies"
+      }
+    ]
+  },
+  {
+    "website": "eBay",
+    "prefix": "ebay",
+    "category": "Marketplaces",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "motorcycle",
+        "count": 27
+      },
+      {
+        "id": "2",
+        "name": "wristwatch",
+        "count": 71
+      },
+      {
+        "id": "3",
+        "name": "grass_shear",
+        "count": 38
+      },
+      {
+        "id": "4",
+        "name": "camera",
+        "count": 63
+      },
+      {
+        "id": "5",
+        "name": "batman_figure",
+        "count": 57
+      }
+    ]
+  },
+  {
+    "website": "Walmart",
+    "prefix": "walmart",
+    "category": "Marketplaces",
+    "preprocess": [
+      "remove_js",
+      "remove_srcset",
+      "fix_cross_origin"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "toddler_clothing",
+        "count": 30,
+        "url": "https://www.walmart.com/browse/clothing/toddler-clothing/5438_7712430_2700757_2676407?povid=ApparelNav_APPAREL_FLP_CP_Hubspokes_Cat_Toddler&sort=best_seller&max_price=396&min_price=162"
+      },
+      {
+        "id": "2",
+        "name": "shoes",
+        "count": 28,
+        "url": "https://www.walmart.com/browse/clothing/young-adult-shoes/5438_9055522_9605583_7275602?povid=ApparelNav_YOUNGADULT_YAShopAll_B_Pills_Cat_Shoes&min_price=483&max_price=1702"
+      },
+      {
+        "id": "3",
+        "name": "breakfast",
+        "count": 43,
+        "url": "https://www.walmart.com/browse/food/breakfast-cereal/976759_976783?povid=976759_hubspoke_976759_Hubspoke_Shopbycategory_Snacks_Rweb_Apr_30_25&max_price=9&min_price=5&facet=fulfillment_method_in_store%3AIn-store%7C%7Cbrand%3AMalt-O-Meal%7C%7Cfulfillment_speed%3A2+days"
+      },
+      {
+        "id": "4",
+        "name": "lighting",
+        "count": 35,
+        "url": "https://www.walmart.com/browse/outdoor-lighting/5428_4423804?povid=HDL_PatioGarden_5428_Hubspoke_Outdoordcor_Outdoorlighting_DSK_Jan_21&max_price=23&min_price=10&facet=fulfillment_method_in_store%3AIn-store%7C%7Cbrand%3AMainstays"
+      },
+      {
+        "id": "5",
+        "name": "home_assistant",
+        "count": 34,
+        "url": "https://www.walmart.com/search?catId=3944_1229875_9098006_8164000&sort=best_match&facet=brand%3AGoogle%7C%7Cfulfillment_speed%3AAnytime%7C%7Cfulfillment_method%3AIn-store&affinityOverride=default&recall_set=inStoreShipFul"
+      }
+    ]
+  },
+  {
+    "website": "Rakuten",
+    "prefix": "rakuten",
+    "category": "Marketplaces",
+    "preprocess": [
+      "remove_js",
+      "remove_srcset"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "luggage"
+      },
+      {
+        "id": "2",
+        "name": "levi_jeans"
+      },
+      {
+        "id": "3",
+        "name": "baby_carrier"
+      },
+      {
+        "id": "4",
+        "name": "hotel"
+      },
+      {
+        "id": "5",
+        "name": "red_wine"
+      }
+    ]
+  },
+  {
+    "website": "Alibaba",
+    "prefix": "alibaba",
+    "category": "Marketplaces",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "phone"
+      },
+      {
+        "id": "2",
+        "name": "eyeglasses"
+      },
+      {
+        "id": "3",
+        "name": "candle_sets"
+      },
+      {
+        "id": "4",
+        "name": "contact_lenses"
+      },
+      {
+        "id": "5",
+        "name": "surveillance"
+      }
+    ]
+  },
+  {
+    "website": "JD.com",
+    "prefix": "jdcom",
+    "category": "Marketplaces",
+    "preprocess": [
+      "remove_js"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "code_book"
+      },
+      {
+        "id": "2",
+        "name": "cake"
+      },
+      {
+        "id": "3",
+        "name": "vegetables"
+      },
+      {
+        "id": "4",
+        "name": "medicine"
+      },
+      {
+        "id": "5",
+        "name": "art_work"
+      }
+    ]
+  },
+  {
+    "website": "MercadoLivre",
+    "prefix": "mercadolivre",
+    "category": "Marketplaces",
+    "preprocess": [
+      "remove_js",
+      "fix_cross_origin"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "carousel"
+      },
+      {
+        "id": "2",
+        "name": "furniture"
+      },
+      {
+        "id": "3",
+        "name": "kitchen_1"
+      },
+      {
+        "id": "4",
+        "name": "container"
+      },
+      {
+        "id": "5",
+        "name": "kitchen_2"
+      }
+    ]
+  },
+  {
+    "website": "Flipkart",
+    "prefix": "flipkart",
+    "category": "Marketplaces",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "air_conditioner"
+      },
+      {
+        "id": "2",
+        "name": "television"
+      },
+      {
+        "id": "3",
+        "name": "iphone"
+      },
+      {
+        "id": "4",
+        "name": "sweatshirt"
+      },
+      {
+        "id": "5",
+        "name": "school_books"
+      }
+    ]
+  },
+  {
+    "website": "Lazada",
+    "prefix": "lazada",
+    "category": "Marketplaces",
+    "preprocess": [
+      "remove_js"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "nike_bag"
+      },
+      {
+        "id": "2",
+        "name": "boy_clothing"
+      },
+      {
+        "id": "3",
+        "name": "dog_food"
+      },
+      {
+        "id": "4",
+        "name": "makeup"
+      },
+      {
+        "id": "5",
+        "name": "eyebrow"
+      }
+    ]
+  },
+  {
+    "website": "Autotrader",
+    "prefix": "autotrader",
+    "category": "Marketplaces",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "audi"
+      },
+      {
+        "id": "2",
+        "name": "near_me"
+      },
+      {
+        "id": "3",
+        "name": "deal_march"
+      },
+      {
+        "id": "4",
+        "name": "certified"
+      }
+    ]
+  },
+  {
+    "website": "Craigslist",
+    "prefix": "craigslist",
+    "category": "Marketplaces",
+    "preprocess": [],
+    "data": [
+        {
+            "id": "1",
+            "name": "vintage"
+        },
+        {
+            "id": "2",
+            "name": "bicycle"
+        },
+        {
+            "id": "3",
+            "name": "room"
+        },
+        {
+            "id": "4",
+            "name": "ocean_house"
+        }
+    ]
+  },
+  {
+    "website": "Booking",
+    "prefix": "booking",
+    "category": "Travel",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "osaka",
+        "url": "https://www.booking.com/attractions/searchresults/jp/osaka.html?adplat=www-searchresults_irene-web_shell_header-attraction-missing_creative-2ib34fEzYYgPNhzHDqbp6C&aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaMkBiAEBmAExuAEHyAEM2AEB6AEB-AECiAIBqAIDuAL16tLABsACAdICJGYxMjNhYWEyLThhNjktNGU4Ny05NDA3LTgyZWIyOTJkZGRmN9gCBeACAQ&client_name=b-web-shell-bff&distribution_id=2ib34fEzYYgPNhzHDqbp6C&start_date=2025-06-13&end_date=2025-06-13&source=search_box&filter_by_ufi[]=-231169"
+      },
+      {
+        "id": "2",
+        "name": "tokyo",
+        "url": "https://www.booking.com/attractions/searchresults/jp/tokyo.html?adplat=www-searchresults_irene-web_shell_header-attraction-missing_creative-2ib34fEzYYgPNhzHDqbp6C&aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaMkBiAEBmAExuAEHyAEM2AEB6AEB-AECiAIBqAIDuAL16tLABsACAdICJGYxMjNhYWEyLThhNjktNGU4Ny05NDA3LTgyZWIyOTJkZGRmN9gCBeACAQ&client_name=b-web-shell-bff&distribution_id=2ib34fEzYYgPNhzHDqbp6C&start_date=2025-06-13&end_date=2025-06-13&source=search_box&filter_by_ufi[]=-226438"
+      },
+      {
+        "id": "3",
+        "name": "toronto",
+        "url": "https://www.booking.com/attractions/searchresults/ca/toronto.html?adplat=www-searchresults_irene-web_shell_header-attraction-missing_creative-2ib34fEzYYgPNhzHDqbp6C&aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaMkBiAEBmAExuAEHyAEM2AEB6AEB-AECiAIBqAIDuAL16tLABsACAdICJGYxMjNhYWEyLThhNjktNGU4Ny05NDA3LTgyZWIyOTJkZGRmN9gCBeACAQ&client_name=b-web-shell-bff&distribution_id=2ib34fEzYYgPNhzHDqbp6C&start_date=2025-06-13&end_date=2025-06-13&source=search_box&filter_by[]=PTCMCcodv3rh"
+      },
+      {
+        "id": "4",
+        "name": "vancouver",
+        "url": "https://www.booking.com/attractions/searchresults/ca/vancouver.html?adplat=www-searchresults_irene-web_shell_header-attraction-missing_creative-2ib34fEzYYgPNhzHDqbp6C&aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaMkBiAEBmAExuAEHyAEM2AEB6AEB-AECiAIBqAIDuAL16tLABsACAdICJGYxMjNhYWEyLThhNjktNGU4Ny05NDA3LTgyZWIyOTJkZGRmN9gCBeACAQ&client_name=b-web-shell-bff&distribution_id=2ib34fEzYYgPNhzHDqbp6C&start_date=2025-06-13&end_date=2025-06-13&source=search_box&filter_by[]=PTCMCgNr9fWb"
+      },
+      {
+        "id": "5",
+        "name": "alexandria",
+        "url": "https://www.booking.com/attractions/searchresults/eg/alexandria.html?adplat=www-searchresults_irene-web_shell_header-attraction-missing_creative-2ib34fEzYYgPNhzHDqbp6C&aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaMkBiAEBmAExuAEHyAEM2AEB6AEB-AECiAIBqAIDuAL16tLABsACAdICJGYxMjNhYWEyLThhNjktNGU4Ny05NDA3LTgyZWIyOTJkZGRmN9gCBeACAQ&client_name=b-web-shell-bff&distribution_id=2ib34fEzYYgPNhzHDqbp6C&start_date=2025-06-13&end_date=2025-06-13&source=search_box&filter_by[]=PTCMCowbPYbZ"
+      }
+    ]
+  },
+  {
+    "website": "TripAdvisor",
+    "prefix": "tripadvisor",
+    "category": "Travel",
+    "preprocess": [
+      "remove_js",
+      "fix_cross_origin"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "los_angeles"
+      },
+      {
+        "id": "2",
+        "name": "singapore"
+      },
+      {
+        "id": "3",
+        "name": "shanghai"
+      },
+      {
+        "id": "4",
+        "name": "paris"
+      },
+      {
+        "id": "5",
+        "name": "london"
+      }
+    ]
+  },
+  {
+    "website": "Airbnb",
+    "prefix": "airbnb",
+    "category": "Travel",
+    "preprocess": [
+      "fix_cross_origin"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "pool"
+      },
+      {
+        "id": "2",
+        "name": "beachfront"
+      },
+      {
+        "id": "3",
+        "name": "castle"
+      },
+      {
+        "id": "4",
+        "name": "tiny"
+      },
+      {
+        "id": "5",
+        "name": "design"
+      }
+    ]
+  },
+  {
+    "website": "Trip.com",
+    "prefix": "tripcom",
+    "category": "Travel",
+    "preprocess": [
+      "remove_js"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "hong_kong"
+      },
+      {
+        "id": "2",
+        "name": "aba"
+      },
+      {
+        "id": "3",
+        "name": "guangzhou"
+      },
+      {
+        "id": "4",
+        "name": "xi_an"
+      },
+      {
+        "id": "5",
+        "name": "rome"
+      }
+    ]
+  },
+  {
+    "website": "Agoda",
+    "prefix": "agoda",
+    "category": "Travel",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "florence"
+      },
+      {
+        "id": "2",
+        "name": "johor_bahru"
+      },
+      {
+        "id": "3",
+        "name": "malacca"
+      },
+      {
+        "id": "4",
+        "name": "alor_setar"
+      },
+      {
+        "id": "5",
+        "name": "penang"
+      }
+    ]
+  },
+  {
+    "website": "Kayak",
+    "prefix": "kayak",
+    "category": "Travel",
+    "preprocess": [
+      "remove_js"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "medan"
+      }
+    ]
+  },
+  {
+    "website": "Google Travel",
+    "prefix": "googletravel",
+    "category": "Travel",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "tokyo"
+      },
+      {
+        "id": "2",
+        "name": "hong_kong"
+      },
+      {
+        "id": "3",
+        "name": "goa"
+      },
+      {
+        "id": "4",
+        "name": "bahrain"
+      },
+      {
+        "id": "5",
+        "name": "kathmandu"
+      }
+    ]
+  },
+  {
+    "website": "Trivago",
+    "prefix": "trivago",
+    "category": "Travel",
+    "preprocess": [
+      "remove_js"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "batu_ferringhi"
+      },
+      {
+        "id": "2",
+        "name": "chongqing"
+      },
+      {
+        "id": "3",
+        "name": "cheng_hoon_teng"
+      },
+      {
+        "id": "4",
+        "name": "utah"
+      },
+      {
+        "id": "5",
+        "name": "baltimore"
+      }
+    ]
+  },
+  {
+    "website": "Explore.com",
+    "prefix": "explore",
+    "category": "Travel",
+    "preprocess": [],
+    "data": [
+        {
+            "id": "1",
+            "name": "index"
+        },
+        {
+            "id": "2",
+            "name": "destination"
+        },
+        {
+            "id": "3",
+            "name": "wheelchair"
+        },
+        {
+            "id": "4",
+            "name": "tip_hack"
+        }
+    ]
+  },
+  {
+    "website": "Behance",
+    "prefix": "behance",
+    "category": "Design",
+    "preprocess": [
+      "remove_js"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "sasha_favorov",
+        "url": "https://www.behance.net/sashafavorov1?tracking_source=search_projects_featured_date"
+      },
+      {
+        "id": "2",
+        "name": "iz_ptica",
+        "url": "https://www.behance.net/izptica?tracking_source=search_projects_featured_date"
+      },
+      {
+        "id": "3",
+        "name": "luisa_fantinel",
+        "url": "https://www.behance.net/luisafantinel?tracking_source=search_projects_featured_date"
+      },
+      {
+        "id": "4",
+        "name": "narupiti",
+        "url": "https://www.behance.net/narupiti4b9f?tracking_source=search_projects_featured_date"
+      },
+      {
+        "id": "5",
+        "name": "lais_zanocco",
+        "url": "https://www.behance.net/laiszanocco?tracking_source=search_projects_featured_date"
+      },
+      {
+        "id": "o3",
+        "name": "vector_assets",
+        "url": "https://www.behance.net/assets/vectors"
+      }
+    ]
+  },
+  {
+    "website": "Dribbble",
+    "prefix": "dribbble",
+    "category": "Design",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "camidobrin"
+      },
+      {
+        "id": "2",
+        "name": "hesamx"
+      },
+      {
+        "id": "3",
+        "name": "keith_lowe"
+      },
+      {
+        "id": "4",
+        "name": "pole4"
+      },
+      {
+        "id": "5",
+        "name": "pswizzard"
+      }
+    ]
+  },
+  {
+    "website": "Houzz",
+    "prefix": "houzz",
+    "category": "Design",
+    "preprocess": ["remove_js"],
+    "data": [
+      {
+        "id": "1",
+        "name": "asian"
+      },
+      {
+        "id": "2",
+        "name": "modern"
+      },
+      {
+        "id": "3",
+        "name": "eclectic"
+      },
+      {
+        "id": "4",
+        "name": "contemporary"
+      },
+      {
+        "id": "5",
+        "name": "coastal"
+      }
+    ]
+  },
+  {
+    "website": "Pinterest",
+    "prefix": "pinterest",
+    "category": "Design",
+    "preprocess": ["remove_js"],
+    "data": [
+      {
+        "id": "1",
+        "name": "beautician"
+      },
+      {
+        "id": "2",
+        "name": "wedding"
+      },
+      {
+        "id": "3",
+        "name": "outfit"
+      },
+      {
+        "id": "4",
+        "name": "scrap_wood"
+      },
+      {
+        "id": "5",
+        "name": "cat"
+      }
+    ]
+  },
+  {
+    "website": "99designs",
+    "prefix": "99designs",
+    "category": "Design",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "design_warlord"
+      },
+      {
+        "id": "2",
+        "name": "jce_graphics"
+      },
+      {
+        "id": "3",
+        "name": "rose"
+      },
+      {
+        "id": "4",
+        "name": "reply11"
+      },
+      {
+        "id": "5",
+        "name": "giocovision"
+      }
+    ]
+  },
+  {
+    "website": "Coroflot",
+    "prefix": "coroflot",
+    "category": "Design",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "rozm"
+      },
+      {
+        "id": "2",
+        "name": "bjchen"
+      },
+      {
+        "id": "3",
+        "name": "chuckjunge"
+      },
+      {
+        "id": "4",
+        "name": "jgabry"
+      },
+      {
+        "id": "5",
+        "name": "michael_young"
+      }
+    ]
+  },
+  {
+    "website": "Havenly",
+    "prefix": "havenly",
+    "category": "Design",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "logo_design"
+      },
+      {
+        "id": "2",
+        "name": "business_card"
+      },
+      {
+        "id": "3",
+        "name": "tshirt_design"
+      },
+      {
+        "id": "4",
+        "name": "web_design"
+      },
+      {
+        "id": "5",
+        "name": "packaging_design"
+      }
+    ]
+  },
+  {
+    "website": "Adobe Portfolio",
+    "prefix": "adobeportfolio",
+    "category": "Design",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "kim_ohrling"
+      },
+      {
+        "id": "2",
+        "name": "britt_martin"
+      },
+      {
+        "id": "3",
+        "name": "goodog"
+      },
+      {
+        "id": "4",
+        "name": "bialons"
+      },
+      {
+        "id": "5",
+        "name": "thezanderson"
+      },
+      {
+        "id": "6",
+        "name": "kevin_focht"
+      }
+    ]
+  },
+  {
+    "website": "Squarespace",
+    "prefix": "squarespace",
+    "category": "Design",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "makers"
+      },
+      {
+        "id": "2",
+        "name": "on_trend"
+      },
+      {
+        "id": "3",
+        "name": "know"
+      },
+      {
+        "id": "4",
+        "name": "video"
+      },
+      {
+        "id": "5",
+        "name": "product_updates"
+      }
+    ]
+  },
+  {
+    "website": "Wix",
+    "prefix": "wix",
+    "category": "Design",
+    "preprocess": [
+      "remove_srcset",
+      "fix_cross_origin"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "page_1"
+      },
+      {
+        "id": "2",
+        "name": "page_2"
+      },
+      {
+        "id": "3",
+        "name": "page_3"
+      },
+      {
+        "id": "4",
+        "name": "page_4"
+      },
+      {
+        "id": "5",
+        "name": "page_5"
+      }
+    ]
+  },
+  {
+    "website": "Canva",
+    "prefix": "canva",
+    "category": "Design",
+    "preprocess": ["fix_cross_origin"],
+    "data": [
+      {
+        "id": "1",
+        "name": "tshirt"
+      },
+      {
+        "id": "2",
+        "name": "label"
+      },
+      {
+        "id": "3",
+        "name": "card"
+      },
+      {
+        "id": "4",
+        "name": "mug"
+      },
+      {
+        "id": "5",
+        "name": "brochure"
+      }
+    ]
+  },
+  {
+    "website": "PureWow",
+    "prefix": "purewow",
+    "category": "Lifestyle",
+    "preprocess": [
+      "remove_js"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "style"
+      },
+      {
+        "id": "2",
+        "name": "food"
+      },
+      {
+        "id": "3",
+        "name": "family"
+      },
+      {
+        "id": "4",
+        "name": "wellness"
+      },
+      {
+        "id": "5",
+        "name": "money"
+      }
+    ]
+  },
+  {
+    "website": "AllRecipes",
+    "prefix": "allrecipes",
+    "category": "Lifestyle",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "seafood",
+        "url": "https://www.allrecipes.com/recipes/93/seafood/"
+      },
+      {
+        "id": "2",
+        "name": "healthy",
+        "url": "https://www.allrecipes.com/recipes/84/healthy-recipes/"
+      },
+      {
+        "id": "3",
+        "name": "bread",
+        "url": "https://www.allrecipes.com/recipes/156/bread/"
+      },
+      {
+        "id": "4",
+        "name": "beef",
+        "url": "https://www.allrecipes.com/recipes/200/meat-and-poultry/beef/"
+      },
+      {
+        "id": "5",
+        "name": "dessert",
+        "url": "https://www.allrecipes.com/recipes/79/desserts/"
+      },
+      {
+        "id": "o5",
+        "name": "pizza",
+        "url": "https://www.allrecipes.com/search?q=pizza"
+      }
+    ]
+  },
+  {
+    "website": "Bon Appétit",
+    "prefix": "bonappetit",
+    "category": "Lifestyle",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "fried_rice"
+      },
+      {
+        "id": "2",
+        "name": "sandwich"
+      },
+      {
+        "id": "3",
+        "name": "rice_and_grain"
+      },
+      {
+        "id": "4",
+        "name": "chili"
+      },
+      {
+        "id": "5",
+        "name": "granola"
+      }
+    ]
+  },
+  {
+    "website": "Epicurious",
+    "prefix": "epicurious",
+    "category": "Lifestyle",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "noodle_pasta"
+      },
+      {
+        "id": "2",
+        "name": "tofu"
+      },
+      {
+        "id": "3",
+        "name": "lamb"
+      },
+      {
+        "id": "4",
+        "name": "mothers_day"
+      },
+      {
+        "id": "5",
+        "name": "memorial_day"
+      }
+    ]
+  },
+  {
+    "website": "Martha Stewart",
+    "prefix": "marthastewart",
+    "category": "Lifestyle",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "wellness"
+      },
+      {
+        "id": "2",
+        "name": "tried_and_true"
+      },
+      {
+        "id": "3",
+        "name": "wedding"
+      },
+      {
+        "id": "4",
+        "name": "houseplant"
+      },
+      {
+        "id": "5",
+        "name": "storage"
+      }
+    ]
+  },
+  {
+    "website": "The Pioneer Woman",
+    "prefix": "thepioneerwoman",
+    "category": "Lifestyle",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "ree"
+      },
+      {
+        "id": "2",
+        "name": "food_cooking"
+      },
+      {
+        "id": "3",
+        "name": "home_lifestyle"
+      },
+      {
+        "id": "4",
+        "name": "comfort_food"
+      },
+      {
+        "id": "5",
+        "name": "product"
+      }
+    ]
+  },
+  {
+    "website": "Cup of Jo",
+    "prefix": "cupofjo",
+    "category": "Lifestyle",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "movie_dtv"
+      },
+      {
+        "id": "2",
+        "name": "basic_food"
+      },
+      {
+        "id": "3",
+        "name": "friendship"
+      },
+      {
+        "id": "4",
+        "name": "drink"
+      },
+      {
+        "id": "5",
+        "name": "entertainment"
+      }
+    ]
+  },
+  {
+    "website": "The Kitchn",
+    "prefix": "thekitchn",
+    "category": "Lifestyle",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "pizza"
+      },
+      {
+        "id": "2",
+        "name": "french"
+      },
+      {
+        "id": "3",
+        "name": "indian"
+      },
+      {
+        "id": "4",
+        "name": "coffee_gear"
+      },
+      {
+        "id": "5",
+        "name": "baking_tips"
+      }
+    ]
+  },
+  {
+    "website": "Poshmark",
+    "prefix": "poshmark",
+    "category": "Lifestyle",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "louis_vuitton"
+      },
+      {
+        "id": "2",
+        "name": "kid_shoes"
+      },
+      {
+        "id": "3",
+        "name": "laptop"
+      },
+      {
+        "id": "4",
+        "name": "happening_now"
+      },
+      {
+        "id": "5",
+        "name": "formula_1"
+      }
+    ]
+  },
+  {
+    "website": "IMDB",
+    "prefix": "imdb",
+    "category": "Entertainment",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "action"
+      },
+      {
+        "id": "2",
+        "name": "comedy"
+      },
+      {
+        "id": "3",
+        "name": "mystery"
+      },
+      {
+        "id": "4",
+        "name": "sci_fi"
+      },
+      {
+        "id": "5",
+        "name": "crime"
+      }
+    ]
+  },
+  {
+    "website": "Rotten Tomatoes",
+    "prefix": "rottentomatoes",
+    "category": "Entertainment",
+    "preprocess": ["remove_js"],
+    "data": [
+      {
+        "id": "1",
+        "name": "theater"
+      },
+      {
+        "id": "2",
+        "name": "home"
+      },
+      {
+        "id": "3",
+        "name": "coming_soon"
+      },
+      {
+        "id": "4",
+        "name": "tv_series"
+      }
+    ]
+  },
+  {
+    "website": "Ditto Music",
+    "prefix": "dittomusic",
+    "category": "Entertainment",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "blog"
+      }
+    ]
+  },
+  {
+    "website": "Spotify",
+    "prefix": "spotify",
+    "category": "Entertainment",
+    "preprocess": [
+      "remove_js"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "lauv"
+      },
+      {
+        "id": "2",
+        "name": "jennie"
+      },
+      {
+        "id": "3",
+        "name": "bruno_mars"
+      },
+      {
+        "id": "4",
+        "name": "jay_chou"
+      },
+      {
+        "id": "5",
+        "name": "sza"
+      }
+    ]
+  },
+  {
+    "website": "CBS Sports",
+    "prefix": "cbssports",
+    "category": "Entertainment",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "super_bowl"
+      }
+    ]
+  },
+  {
+    "website": "Ticketmaster",
+    "prefix": "ticketmaster",
+    "category": "Entertainment",
+    "preprocess": [
+      "fix_cross_origin"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "concert"
+      },
+      {
+        "id": "2",
+        "name": "sports"
+      },
+      {
+        "id": "3",
+        "name": "arts_theatre_comedy"
+      },
+      {
+        "id": "4",
+        "name": "belgium"
+      },
+      {
+        "id": "5",
+        "name": "brasil"
+      }
+    ]
+  },
+  {
+    "website": "Yahoo Sports",
+    "prefix": "yahoosports",
+    "category": "Entertainment",
+    "preprocess": [],
+    "data": [
+      {
+        "id": "1",
+        "name": "nba_player"
+      },
+      {
+        "id": "2",
+        "name": "mls"
+      },
+      {
+        "id": "3",
+        "name": "nfl"
+      },
+      {
+        "id": "4",
+        "name": "nba"
+      },
+      {
+        "id": "5",
+        "name": "nhl"
+      }
+    ]
+  },
+  {
+    "website": "Bleacher Report",
+    "prefix": "bleacherreport",
+    "category": "Entertainment",
+    "preprocess": [
+      "remove_js"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "ufc_fights"
+      },
+      {
+        "id": "2",
+        "name": "nba_mock_draft"
+      },
+      {
+        "id": "3",
+        "name": "gregg_popovich"
+      },
+      {
+        "id": "4",
+        "name": "mlb_buy_sell"
+      },
+      {
+        "id": "5",
+        "name": "nfl_draft"
+      }
+    ]
+  },
+  {
+    "website": "Meetup",
+    "prefix": "meetup",
+    "category": "Entertainment",
+    "preprocess": [
+      "remove_js"
+    ],
+    "data": [
+      {
+        "id": "1",
+        "name": "singapore"
+      },
+      {
+        "id": "2",
+        "name": "london"
+      },
+      {
+        "id": "3",
+        "name": "windy_city_social"
+      },
+      {
+        "id": "4",
+        "name": "work_and_tour"
+      },
+      {
+        "id": "5",
+        "name": "logan_square"
+      }
+    ]
+  },
+  {
+    "website": "Eventbrite",
+    "prefix": "eventbrite",
+    "category": "Entertainment",
+    "preprocess": ["remove_js"],
+    "data": [
+      {
+        "id": "1",
+        "name": "sg_all",
+        "url": "https://www.eventbrite.com/b/singapore--singapore/nightlife/?category=tonight"
+      },
+      {
+        "id": "2",
+        "name": "sg_party",
+        "url": "https://www.eventbrite.com/b/singapore--singapore/nightlife/?category=clubs-and-parties"
+      },
+      {
+        "id": "3",
+        "name": "us_party",
+        "url": "https://www.eventbrite.com/b/united-states/nightlife/?category=clubs-and-parties"
+      },
+      {
+        "id": "4",
+        "name": "us_comedy",
+        "url": "https://www.eventbrite.com/b/united-states/nightlife/?category=comedy-and-shows"
+      },
+      {
+        "id": "5",
+        "name": "us_music",
+        "url": "https://www.eventbrite.com/b/united-states/music/"
+      }
+    ]
+  }
+]
+}
