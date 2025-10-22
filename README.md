@@ -1,18 +1,33 @@
 # WebCloak: Characterizing and Mitigating the Threats of LLM-Driven Web Agents as Intelligent Scrapers
 
-<p align="center">
+<p align="left">
   <a href="https://visitor-badge.laobi.icu/badge?page_id=web-cloak.github.io">
     <img src="https://visitor-badge.laobi.icu/badge?page_id=web-cloak.github.io" alt="Visitors">
+  </a>
+  &nbsp;
+  <a href="https://letterligo.github.io/paper/SP26_WebAgent.pdf">
+    <img src="https://img.shields.io/badge/Paper-PDF-red" alt="Paper">
+  </a>
+  &nbsp;
+  <a href="https://zenodo.org/records/17251212">
+    <img src="https://img.shields.io/badge/Dataset-Zenodo-blue" alt="Dataset">
+  </a>
+  &nbsp;
+  <a href="https://web-cloak.github.io/">
+    <img src="https://img.shields.io/badge/Website-Visit-blue" alt="Website">
+  </a>
+  &nbsp;
+  <a href="https://github.com/LetterLiGO/Agent-WebCloak">
+    <img src="https://img.shields.io/github/stars/LetterLiGO/Agent-WebCloak?style=social" alt="GitHub stars">
   </a>
   &nbsp;
   <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
     <img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" alt="License: CC BY-NC-SA 4.0">
   </a>
-  &nbsp;
-  <a href="https://github.com/LetterLiGO/Agent-WebCloak">
-    <img src="https://img.shields.io/github/stars/web-cloak/webcloak?style=social" alt="GitHub stars">
-  </a>
+  
 </p>
+
+
 
 This repository contains the code for our paper "WebCloak: Characterizing and Mitigating the Threats of LLM-Driven Web Agents as Intelligent Scrapers" (IEEE S&P 2026). Our work presents the first systematic characterization of LLM-driven web agents as intelligent scrapers and introduces WebCloak, an effective defense mechanism.
 
