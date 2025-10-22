@@ -1,6 +1,20 @@
 # WebCloak: Characterizing and Mitigating the Threats of LLM-Driven Web Agents as Intelligent Scrapers
 
-This repository contains the artifact for the paper "WebCloak: Characterizing and Mitigating the Threats of LLM-Driven Web Agents as Intelligent Scrapers". Our work presents the first systematic characterization of LLM-driven web agents as intelligent scrapers and introduces WebCloak, an effective defense mechanism.
+<p align="center">
+  <a href="https://visitor-badge.laobi.icu/badge?page_id=web-cloak.github.io">
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=web-cloak.github.io" alt="Visitors">
+  </a>
+  &nbsp;
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+    <img src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" alt="License: CC BY-NC-SA 4.0">
+  </a>
+  &nbsp;
+  <a href="https://github.com/LetterLiGO/Agent-WebCloak">
+    <img src="https://img.shields.io/github/stars/web-cloak/webcloak?style=social" alt="GitHub stars">
+  </a>
+</p>
+
+This repository contains the code for our paper "WebCloak: Characterizing and Mitigating the Threats of LLM-Driven Web Agents as Intelligent Scrapers" (IEEE S&P 2026). Our work presents the first systematic characterization of LLM-driven web agents as intelligent scrapers and introduces WebCloak, an effective defense mechanism.
 
 ---
 
@@ -9,13 +23,63 @@ This repository contains the artifact for the paper "WebCloak: Characterizing an
 The rise of web agents powered by large language models (LLMs) enables users to automate complex web tasks with natural language commands, but introduces serious security concerns: adversaries can easily employ such web agents to conduct advanced web scraping, particularly of rich visual content.
 
 This artifact includes:
-- **LLMCrawlBench**: A large test set of 237 extracted real-world webpages (10,895 images) from 50 popular websites across 5 critical categories
-- **WebCloak Defense**: A dual-layered defense mechanism with Dynamic Structural Obfuscation and Optimized Semantic Labyrinth
-- **Comprehensive Evaluation**: Testing against LLM scraper implementations including LLM-to-Script (L2S), LLM-Native Crawlers (LNC), and LLM-based web agents (LWA)
+- **LLMCrawlBench**: A large test set of 237 extracted real-world webpages (10,895 images) from 50 popular websites across 5 critical categories.
+- **WebCloak Defense**: A dual-layered defense mechanism with Dynamic Structural Obfuscation and Optimized Semantic Labyrinth.
+- **Comprehensive Evaluation**: Testing against LLM scraper implementations including LLM-to-Script (L2S), LLM-Native Crawlers (LNC), and LLM-based web agents (LWA).
 
 ---
 
-## 🛠️ Preparation
+## ⚔️ The Threat: LLM-Driven Web Agents as Intelligent Scrapers
+
+LLM-driven web agents can be easily repurposed for malicious scraping. These agents typically follow a "Parse-then-Interpret" mechanism, which makes them vulnerable to our defense.
+
+<p align="center">
+  <img src="static/images/agents-mechanism.png" alt="Agent Mechanism" width="70%">
+</p>
+
+---
+
+## 🛡️ WebCloak Defense
+
+WebCloak is a dual-layered defense mechanism designed to protect against LLM-driven scrapers.
+
+<p align="center">
+  <img src="static/images/design_overview.png" alt="WebCloak Overview" width="70%">
+</p>
+
+### Stage 1: Dynamic Structural Obfuscation
+
+This stage randomizes structural cues and restores visual content client-side using non-traditional methods.
+
+<p align="center">
+  <img src="static/images/design_s1.png" alt="WebCloak Stage 1" width="70%">
+</p>
+
+### Stage 2: Optimized Semantic Labyrinth
+
+This stage misleads the LLM's interpretation by adding harmless-yet-misleading contextual clues, without sacrificing visual quality for legitimate users.
+
+<p align="center">
+  <img src="static/images/design_s2.png" alt="WebCloak Stage 2" width="70%">
+</p>
+
+---
+
+## 🗂️ LLMCrawlBench Dataset
+
+LLMCrawlBench is a large-scale benchmark dataset for evaluating web scraping threats.
+
+<p align="center">
+  <img src="static/images/dataset.png" alt="Dataset" width="70%">
+</p>
+
+<p align="center">
+  <img src="static/images/dataset_details.jpg" alt="Dataset" width="70%">
+</p>
+
+---
+
+## 🚀 Usage
 
 ### Prerequisites
 
@@ -32,9 +96,9 @@ playwright install
 
 ### Dataset Download
 
-The dataset files can be downloaded separately from Google Drive via this link: https://zenodo.org/uploads/17251212.
+The dataset files can be downloaded separately from Google Drive via this link: https://drive.google.com/drive/folders/1OLZPqcdE8I4nvK4NJ0tXeS1_PTUD6kLk?usp=sharing
 
-The downloaded dataset files should be placed directly inside the `/dataset/artifact/` folder, , e.g., the `99designs` folder should be in `/dataset/artifact/99designs`.
+The downloaded dataset files should be placed directly inside the `/dataset/` folder, e.g., the `99designs` folder should be in `/dataset/99designs`.
 
 ### Environment Setup
 
@@ -45,48 +109,8 @@ cd artifact/experiments
 # Edit secret.py to add your own API keys
 # Or copy from template: cp secret_template.py secret.py
 ```
----
 
-## 🗂️ Repository Structure
-
-- **`dataset/artifact/`**: LLMCrawlBench - 237 real-world webpages from 50 popular websites
-- **`artifact/source_code/`**: WebCloak defense implementation
-- **`artifact/experiments/`**: Scripts for various scraping tools and defense mechanisms
-
----
-
-## 🎯 Key Results
-
-Our evaluation demonstrates that:
-
-- **Threat Assessment**: Sophisticated LLM-powered frameworks significantly lower the bar for effective scraping
-- **Defense Effectiveness**: WebCloak reduces scraping recall rates from **88.7% to 0%** against leading LLM-driven scraping agents
-- **Visual Quality**: Perfect visual quality maintained for legitimate users
-- **Robustness**: Effective against adversarial prompts and multi-turn attacks
-
----
-
-## 🔍 LLMCrawlBench Dataset
-
-The dataset includes 237 webpages from 50 popular websites across 5 categories:
-- **Marketplaces**: Amazon, eBay, Alibaba, etc.
-- **Travel**: Booking, Airbnb, TripAdvisor, etc.
-- **Lifestyle**: AllRecipes, Bon Appétit, etc.
-- **Design**: Behance, Dribbble, etc.
-- **Entertainment**: IMDb, ESPN, etc.
-
-Each webpage includes:
-- Original HTML files
-- Associated assets (CSS, JS, images)
-- Image metadata and ground truth annotations
-- Defended versions with WebCloak applied
-
-
----
-
-## 🚀 Usage
-
-### 1. Running the WebCloak Defense
+### Running the WebCloak Defense
 
 To apply the Dynamic Structural Obfuscation (Stage 1) defense to webpages:
 
@@ -95,14 +119,11 @@ cd artifact/source_code
 python stage1/defend.py
 ```
 
-Defended files are saved as `index.html_edited.html` in the dataset directories. Specified content can be seen in `source_code/stage1/README.md`.
+Defended files are saved as `index.html_edited.html` in the dataset directories.
 
 To apply the Optimized Semantic Labyrinth (Stage 2) defense to webpages:
 
 ```bash
-# Initialize for dependencies
-pip install beautifulsoup4 openai google-generativeai html2text asyncio pathlib
-
 # Set Gemini and OpenAI API keys
 export GOOGLE_API_KEY="your_gemini_api_key_here"
 export OPENAI_API_KEY="your_openai_api_key_here"
@@ -112,14 +133,7 @@ cd artifact/source_code/stage2
 python main_stage2.py path/to/your/input.html
 ```
 
-**Example Output**: We have included a complete execution example in `source_code/stage2/Output/test_20251001_233314/` containing:
-- `protected_html/`: Defended HTML files with invisible protection layers
-- `llm_responses/`: LLM-generated defense text for each image
-- `markdown_prompts/`: Structured prompts used for defense generation
-
-This demonstrates successful Stage 2 execution and can be used as a reference. Specified content can be seen in `source_code/stage2/README.md`.
-
-### 2. Running LLM-Driven Scrapers Experiments
+### Running LLM-Driven Scrapers Experiments
 
 Although headless command-line-only mode is supported, we highly recommend the experiments to be done in a GUI-enabled environment, for best result visualisation and optimal accuracy.
 
@@ -136,8 +150,6 @@ python run_browser_use.py --headless
 python run_browser_use.py --edited-file
 ```
 
-More usages, like model selection, can be found in `experiments/README_browser_use.md`.
-
 #### Running Crawl4AI
 
 ```bash
@@ -150,8 +162,6 @@ python run_crawl4ai.py --headless
 # Test against Stage 1 defended pages
 python run_crawl4ai.py --edited-file
 ```
-
-More usages, like model selection, can be found in `experiments/README_crawl4ai.md`.
 
 #### Running LLM-to-Script
 
@@ -168,63 +178,31 @@ cd artifact/experiments
 python llm2script.py dataset/allrecipes/1/index.html
 ```
 
-The output results of this example are located in 'experiments/LLM-to-Script/allrecipes_1_gemini-2.5-pro-preview-03-25' and 'experiments/LLM-to-Script/json', the generated logs are located in 'experiments/LLM-to-Script/logs', and the code generated by LLM is located in 'experiments/LLM-to-Script/generated_scripts'.
-
-#### HTTP Mode (Required for Crawl4AI Adversarial Robustness Tests)
-
-For accurate adversarial robustness evaluation against Crawl4AI, set up a local web server:
-
-1. Install Laravel Herd (Windows/macOS) or Valet Linux
-2. Set up `http://webcloak.test/` pointing to the artifact directory
-3. Run: `python run_crawl4ai.py --http-path`
-
-More details can be found in `experiments/README_crawl4ai.md`. This step is not necessary when not doing Crawl4AI adversarial robustness tests.
-
-#### Adversarial Robustness Testing
-
-Test against sophisticated adversarial prompts for Browser Use and Crawl4AI:
-
-```bash
-# Generic adversarial prompts
-python run_crawl4ai.py --adversary generic
-python run_browser_use.py --adversary generic
-
-# Knowledge-based adversarial prompts
-python run_crawl4ai.py --adversary knowledge
-python run_browser_use.py --adversary knowledge
-```
-
-For LLM-to-Script, the process will involve two steps: 
-1. Generate adaptive adversarial scraper scripts via `experiments/Table10/adaptive_L2S.py`. Choose between different user messages to get scripts for different settings
-2. Utilize `experiments/LLM-to-Script/l2s_3.py` to gather statistics
-
-
----
-
-## 🛡️ WebCloak Defense
-
-LLM-driven scraping agents often reply on webpage parsing and interpretation. To mitigate such evolving threats, we introduce dual-layer WebCloak with (1) dynamic obfuscation and (2) semantic labyrinth. 
-
-WebCloak aims to be a lightweight, “in-page” solution that transforms a standard webpage into a self-protecting asset, without relying on external tools or heavy server-side interventions.
-
----
-
-## 📜Citation
-If you find our work/code/dataset helpful, please consider citing:
-```
-@inproceedings{li2026webcloak,
-  title={WebCloak: Characterizing and Mitigating Threats from {LLM}-Driven Web Agents as Intelligent Scrapers},
-  author={Li, Xinfeng and Qiu, Tianze and Jin, Yingbin and Wang, Lixu and Guo, Hanqing and Jia, Xiaojun and Wang, XiaoFeng and Dong, Wei},
-  booktitle={2026 IEEE Symposium on Security and Privacy (S\&P)},
-  year={2026}
-}
-```
-
-
 ---
 
 ## ⚖️ Ethical Considerations
 
-Our research protocol, including LLMCrawlBench data collection and the user studies, received full approval from our Institutional Review Board (IRB). In line with best practices for web agent datasets like WebArena, Mind2Web, LLMCrawlBench consists of offline snapshots of public webpages, and no private or authenticated user data was accessed or stored. 
+Our research protocol, including LLMCrawlBench data collection and the user studies, received full approval from our Institutional Review Board (IRB). In line with best practices for web agent datasets like WebArena, Mind2Web, LLMCrawlBench consists of offline snapshots of public webpages, and no private or authenticated user data was accessed or stored.
 
 All experiments are conducted locally to avoid impact on live websites. Ground-truth annotation is done by trained annotators under clear guidelines to ensure objectivity and relevance. WebCloak is designed as a defensive technology to protect website owners. Access to our datasets is strictly regulated and granted only for legitimate research purposes, subject to rigorous scrutiny and institutional approval to maintain ethical standards. We have also contacted the websites to inform them of our research.
+
+---
+
+## 📄 License
+
+This project is licensed under the terms of the `LICENSE` file. This software is licensed for non-commercial use only.
+
+---
+
+## ✏️ Citation
+
+If you find our work/code/dataset useful, please consider citing our paper:
+
+```bibtex
+@inproceedings{li2026webcloak,
+  title={WebCloak: Characterizing and Mitigating the Threats of LLM-Driven Web Agents as Intelligent Scrapers},
+  author={Li, Xinfeng and Qiu, Tianze and Jin, Yingbin and Wang, Lixu and Guo, Hanqing and Jia, Xiaojun and Wang, XiaoFeng and Dong, Wei},
+  booktitle={IEEE Symposium on Security and Privacy (S&P)},
+  year={2026}
+}
+```
